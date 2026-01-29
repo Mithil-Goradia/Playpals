@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function Home() {
   const navigate = useNavigate();
@@ -11,7 +12,7 @@ function Home() {
         
 
             {/* HERO SECTION */}
-            <section className="h-screen flex items-center justify-center px-6 pt-24 bg-gradient-to-b from-green-950 to-black">
+            <section className="h-screen flex items-center justify-center pt-24 bg-gradient-to-b from-green-950 to-black">
             <div
                 className="
                 relative w-full max-w-5xl h-[520px]
@@ -63,7 +64,7 @@ function Home() {
                     className="
                         px-8 py-3 rounded-lg font-semibold
                         border border-white/30
-                        bg-white/10 backdrop-blur-md
+                        bg-white/0 backdrop-blur-md
                         transition-all duration-300
                         hover:shadow-[0_0_25px_#22c55e]
                     "
@@ -376,9 +377,7 @@ function Home() {
 
 
             {/* FOOTER */}
-            <footer className="text-center text-gray-500 py-6 border-t border-white/10">
-                © 2026 PlayPals. Play more. Worry less.
-            </footer>
+            <Footer />
         </div>
     </div>
   );

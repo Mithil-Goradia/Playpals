@@ -4,6 +4,7 @@ import Signup from "./pages/Signup";
 import Home from "./pages/Home";
 import Book from "./pages/Book";
 import Post from "./pages/Post";
+import Profile from "./pages/Profile";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="home" element={<Home />} />
         <Route path="/book" element={<Book />} />
         <Route path="/post" element={<Post />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </BrowserRouter>
   );
